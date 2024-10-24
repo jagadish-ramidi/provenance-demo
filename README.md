@@ -1,2 +1,1 @@
 # provenance-demo
-test build
