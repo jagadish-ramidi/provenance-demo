@@ -1,6 +1,4 @@
-FROM artifactory.dev.adskengineer.net/cloudos-community/alpine/python311:latest
-
-ARG PIP_INDEX_URL=https://art-toucan.autodesk.com/artifactory/api/pypi/autodesk-pypi-virtual/simple
+FROM python:3.9.20
 
 USER root
 
