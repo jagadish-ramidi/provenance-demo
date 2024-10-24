@@ -4,12 +4,16 @@ pipeline{
         
     stage('Clone')
 {
-    checkout scm
+    steps {
+                checkout scm
+            }
 
 }
 
 stage('setup witness'){
+    steps {
     sh 'wit.sh'
+    }
 }
 
 // stage('Build'){
