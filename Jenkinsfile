@@ -1,5 +1,7 @@
 pipeline{
     agent any
+    stages{
+        
     stage('Clone')
 {
     checkout scm
@@ -45,3 +47,5 @@ stage('setup witness'){
 
 }
 
+
+}
