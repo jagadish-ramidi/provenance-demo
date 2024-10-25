@@ -45,7 +45,7 @@ stage('Check build Complicance'){
 
 stage('modify artifact'){
     steps {
-        echo "some data for the file" >> "hello.txt"
+        echo "'some data for the file' >> hello.txt"
     }
 }
 
