@@ -1,0 +1,43 @@
+{
+  "expires": "2035-12-17T23:57:40-05:00",
+  "steps": {
+    "build": {
+      "name": "build",
+      "attestations": [
+        {
+          "type": "https://witness.dev/attestations/git/v0.1",
+          "regoPolicies": [
+            {
+              "name": "exitcode",
+              "module": "cGFja2FnZSBnaXQKaW1wb3J0IGZ1dHVyZS5rZXl3b3Jkcy5pbgoKZGVueVttc2ddewogICAgc29tZSBmaWxlIGluIGlucHV0LnN0YXR1cwogICAgZmlsZS53b3JrdHJlZSA9PSAibW9kaWZpZWQiCiAgICBtc2cgOj0gImZpbGUgaXMgbW9kaWZpZWQiCn0KCmRlbnlbbXNnXXsKICAgIG5vdCBpbnB1dC5zaWduYXR1cmUKICAgIG1zZyA6PSAiQ29tbWl0IHNpZ25hdHVyZSBkb2VzbnQgZXhpc3QiCn0="
+            }
+          ]
+        },
+        {
+          "type": "https://witness.dev/attestations/product/v0.1"
+        },
+        {
+          "type": "https://witness.dev/attestations/command-run/v0.1",
+          "regoPolicies": [
+            {
+              "name": "exitcode",
+              "module": "cGFja2FnZSBjb21tYW5kcnVuCgpkZW55W21zZ10gewogICAgaW5wdXQuZXhpdGNvZGUgIT0gMAogICAgbXNnIDo9ICJleGl0Y29kZSBub3QgMCIKfQo="
+            }
+          ]
+        }
+      ],
+      "functionaries": [
+        {
+          "type": "publickey",
+          "publickeyid": "4a87bcaa3f9ab6d576b878f36b5e8076bfa757cae41ad7d4fff738ae3dc3bd84"
+        }
+      ]
+    }
+  },
+  "publickeys": {
+    "4a87bcaa3f9ab6d576b878f36b5e8076bfa757cae41ad7d4fff738ae3dc3bd84": {
+      "keyid": "4a87bcaa3f9ab6d576b878f36b5e8076bfa757cae41ad7d4fff738ae3dc3bd84",
+      "key": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF3amh0elVCZ2x5TVh1UmpBR2Y0UwpVeEVJYnBJRFRoekVVQ1pxZ0NObkRTUUZBb2pTSTR3SHpPQTdhVGR5SFZ5a2lYU2RUempXSFA3ZlAvYjNPUGxwCkVkaU5aYzhFUlFQUUlxOXg1dks3ekFDYVozKzErRFhDeXdpSzRMMzFleWU2U1VGMHRZRlZaWGdRYW5Ta1JOV0YKdExvS2pTQVRsb1VtUDFEalcvWW80bkZ6UmNkbmlhOUpBOEdOQ2JQR3o0ZnhxZzREUlVhQXJxTkVlK01aK0FrRgppaUpjZlk5cjk2UkFKaVlITVExc3dVUlRXRk1XbE5LK0c5dndNQWhWb1FuRzNsRkFLNStQNkJBSGZKc3NRWGthCkdZdWFZTHNyTnNCR0s0M3hyNXJuZFdCQXJGVDhNVDViYlJNN0MydS9uV3ZKMGo2eVZ3UWlobHkvK2VoeU5ORVgKOFFJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg=="
+    }
+  }
+}
