@@ -20,7 +20,7 @@ stage('setup witness'){
 
 stage('Build'){
     steps {
-        sh './witness run --step build -o build-attestation.json -a slsa,git --attestor-slsa-export -- pip3 install -r requirements.txt'
+        sh './witness run --step build -o build-attestation.json -k buildkey.pem -a slsa,git --attestor-slsa-export -- pip3 install -r requirements.txt'
     }
 }
 
@@ -30,7 +30,7 @@ stage('SCA Scan'){
     sh 'chmod +x ./snyk'
     sh './snyk -h'
     withCredentials([usernamePassword(credentialsId: 'snyk-token-demo', usernameVariable: 'SNYK_TOKEN', passwordVariable: 'PASSWORD')]) {
-        sh 'export SNYK_TOKEN=${PASSWORD} && ./witness run --step build -o sca-att.json -a slsa,git --attestor-slsa-export -- ./snyk test --org="02f1fc29-cc99-430a-a317-0be13c7a107d" --file="requirements.txt" --json --command="python3" --fail-on="upgradable" --severity-threshold=critical > vuln.json'
+        sh 'export SNYK_TOKEN=${PASSWORD} && ./witness run --step build -k buildkey.pem -o sca-att.json -a slsa,git --attestor-slsa-export -- ./snyk test --org="02f1fc29-cc99-430a-a317-0be13c7a107d" --file="requirements.txt" --json --command="python3" --fail-on="upgradable" --severity-threshold=critical > vuln.json'
     
     }
     }
