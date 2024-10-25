@@ -12,18 +12,15 @@ pipeline{
 
 stage('setup witness'){
     steps {
-    sh 'curl -h'
     sh 'curl -L https://github.com/in-toto/witness/releases/download/v0.6.0/witness_0.6.0_darwin_amd64.tar.gz > witness_0.6.0_darwin_amd64.tar.gz'
     sh 'tar -xzf "witness_0.6.0_darwin_amd64.tar.gz"'
     sh 'chmod u+x witness'
-    sh './witness -h'
     }
 }
 
 stage('Build'){
     steps {
-        sh 'uname -m'
-        sh 'pip3 install -r requirements.txt'
+        sh './witness run --step build -o test-att.json -a slsa,git --attestor-slsa-export -- pip3 install -r requirements.txt'
     }
 }
 
