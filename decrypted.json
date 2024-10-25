@@ -1,0 +1,330 @@
+{
+  "_type": "https://in-toto.io/Statement/v0.1",
+  "subject": [
+    {
+      "name": "https://witness.dev/attestations/git/v0.1/authoremail:jagadish.ramidi@gmail.com",
+      "digest": {
+        "sha256": "71c5f96c1424d1309a83506e133119e4f19cf74313abc3645463adadb5565957"
+      }
+    },
+    {
+      "name": "https://witness.dev/attestations/git/v0.1/committeremail:jagadish.ramidi@gmail.com",
+      "digest": {
+        "sha256": "71c5f96c1424d1309a83506e133119e4f19cf74313abc3645463adadb5565957"
+      }
+    },
+    {
+      "name": "https://witness.dev/attestations/git/v0.1/parenthash:e5d45a1ca53a1f8a95db2850f8c740d07b5bc990",
+      "digest": {
+        "sha256": "c629dc4b7e279034c07b06a12de0bf0ec306bf53fecd9d6bb8c56f14d3bae884"
+      }
+    },
+    {
+      "name": "https://witness.dev/attestations/git/v0.1/refnameshort:main",
+      "digest": {
+        "sha256": "0d6e4079e36703ebd37c00722f5891d28b0e2811dc114b129215123adcce3605"
+      }
+    },
+    {
+      "name": "https://witness.dev/attestations/product/v0.1/file:hello.txt",
+      "digest": {
+        "sha256": "5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03"
+      }
+    },
+    {
+      "name": "https://witness.dev/attestations/git/v0.1/commithash:385bfb255f5c7db96ec20076eea4427b71e3affa",
+      "digest": {
+        "sha1": "385bfb255f5c7db96ec20076eea4427b71e3affa"
+      }
+    }
+  ],
+  "predicateType": "https://witness.testifysec.com/attestation-collection/v0.1",
+  "predicate": {
+    "name": "build",
+    "attestations": [
+      {
+        "type": "https://witness.dev/attestations/environment/v0.1",
+        "attestation": {
+          "os": "darwin",
+          "hostname": "Tanushas-MacBook-Air.local",
+          "username": "tanushasolipuram",
+          "variables": {
+            "COLORTERM": "truecolor",
+            "COMMAND_MODE": "unix2003",
+            "GIT_ASKPASS": "/private/var/folders/1t/xhzryz3n66v_wt21ft46rx780000gn/T/AppTranslocation/F8BEBA03-48FB-4703-B773-E550BBB6FBAE/d/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh",
+            "HOME": "/Users/tanushasolipuram",
+            "HOMEBREW_CELLAR": "/opt/homebrew/Cellar",
+            "HOMEBREW_PREFIX": "/opt/homebrew",
+            "HOMEBREW_REPOSITORY": "/opt/homebrew",
+            "INFOPATH": "/opt/homebrew/share/info:/opt/homebrew/share/info:",
+            "LANG": "en_US.UTF-8",
+            "LOGNAME": "tanushasolipuram",
+            "MallocNanoZone": "0",
+            "OLDPWD": "/Users/tanushasolipuram/Documents/provenance/test",
+            "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+            "PATH": "/Users/tanushasolipuram/Documents/provenance/provenance-demo/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin",
+            "PS1": "(provenance-demo) %n@%m %1~ %# ",
+            "PWD": "/Users/tanushasolipuram/Documents/provenance/provenance-demo",
+            "SHELL": "/bin/zsh",
+            "SHLVL": "1",
+            "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.X5xTgAcN4Q/Listeners",
+            "TERM": "xterm-256color",
+            "TERM_PROGRAM": "vscode",
+            "TERM_PROGRAM_VERSION": "1.94.2",
+            "TMPDIR": "/var/folders/1t/xhzryz3n66v_wt21ft46rx780000gn/T/",
+            "USER": "tanushasolipuram",
+            "USER_ZDOTDIR": "/Users/tanushasolipuram",
+            "VIRTUAL_ENV": "/Users/tanushasolipuram/Documents/provenance/provenance-demo",
+            "VIRTUAL_ENV_PROMPT": "provenance-demo",
+            "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "",
+            "VSCODE_GIT_ASKPASS_MAIN": "/private/var/folders/1t/xhzryz3n66v_wt21ft46rx780000gn/T/AppTranslocation/F8BEBA03-48FB-4703-B773-E550BBB6FBAE/d/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js",
+            "VSCODE_GIT_ASKPASS_NODE": "/private/var/folders/1t/xhzryz3n66v_wt21ft46rx780000gn/T/AppTranslocation/F8BEBA03-48FB-4703-B773-E550BBB6FBAE/d/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)",
+            "VSCODE_GIT_IPC_HANDLE": "/var/folders/1t/xhzryz3n66v_wt21ft46rx780000gn/T/vscode-git-2534a9b3bb.sock",
+            "VSCODE_INJECTION": "1",
+            "XPC_FLAGS": "0x0",
+            "XPC_SERVICE_NAME": "0",
+            "ZDOTDIR": "/Users/tanushasolipuram",
+            "_": "/Users/tanushasolipuram/Documents/provenance/provenance-demo/./witness",
+            "__CFBundleIdentifier": "com.microsoft.VSCode",
+            "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0"
+          }
+        },
+        "starttime": "2024-10-26T00:27:45.103955+05:30",
+        "endtime": "2024-10-26T00:27:45.10532+05:30"
+      },
+      {
+        "type": "https://witness.dev/attestations/git/v0.1",
+        "attestation": {
+          "commithash": "385bfb255f5c7db96ec20076eea4427b71e3affa",
+          "author": "ramidij",
+          "authoremail": "jagadish.ramidi@gmail.com",
+          "committername": "ramidij",
+          "committeremail": "jagadish.ramidi@gmail.com",
+          "commitdate": "2024-10-25 23:32:28 +0530 +0530",
+          "commitmessage": "test\n",
+          "status": {
+            ".witness.yaml": {
+              "staging": "unmodified",
+              "worktree": "deleted"
+            },
+            "README.md": {
+              "staging": "unmodified",
+              "worktree": "deleted"
+            },
+            "buildkey.pem": {
+              "staging": "untracked",
+              "worktree": "untracked"
+            },
+            "buildpublic.pem": {
+              "staging": "untracked",
+              "worktree": "untracked"
+            },
+            "rego/cmd.rego": {
+              "staging": "untracked",
+              "worktree": "untracked"
+            },
+            "rego/git.rego": {
+              "staging": "untracked",
+              "worktree": "untracked"
+            },
+            "testkey.pem": {
+              "staging": "unmodified",
+              "worktree": "deleted"
+            },
+            "testpub.pem": {
+              "staging": "unmodified",
+              "worktree": "deleted"
+            },
+            "wit.sh": {
+              "staging": "unmodified",
+              "worktree": "deleted"
+            },
+            "witness": {
+              "staging": "untracked",
+              "worktree": "untracked"
+            }
+          },
+          "commitdigest": {
+            "sha1": "385bfb255f5c7db96ec20076eea4427b71e3affa"
+          },
+          "parenthashes": [
+            "e5d45a1ca53a1f8a95db2850f8c740d07b5bc990"
+          ],
+          "treehash": "09044f5aed72986bf6c243a21135fb69457a9cac",
+          "refs": [
+            "refs/heads/main",
+            "refs/remotes/origin/main"
+          ],
+          "remotes": [
+            "https://github.com/jagadish-ramidi/provenance-demo.git"
+          ],
+          "branch": "main"
+        },
+        "starttime": "2024-10-26T00:27:45.103985+05:30",
+        "endtime": "2024-10-26T00:27:45.249592+05:30"
+      },
+      {
+        "type": "https://witness.dev/attestations/material/v0.1",
+        "attestation": {
+          ".git/COMMIT_EDITMSG": {
+            "sha256": "f2ca1bb6c7e907d06dafe4687e579fce76b37e4e93b7605022da52e6ccc26fd2"
+          },
+          ".git/FETCH_HEAD": {
+            "sha256": "d67e5399d918e29c7f22d6f32166c13ee07eec31489ccded1bc3589febeaa278"
+          },
+          ".git/HEAD": {
+            "sha256": "28d25bf82af4c0e2b72f50959b2beb859e3e60b9630a5e8c603dad4ddb2b6e80"
+          },
+          ".git/ORIG_HEAD": {
+            "sha256": "70ad239b913299cbaf3755c8e4704a1a5a155845fbbb8460223b1faee1846e5e"
+          },
+          ".git/config": {
+            "sha256": "b5cc19560874ca091296de7761571984dea7158ee3e8db58db83c1db0a9a8627"
+          },
+          ".git/description": {
+            "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+          },
+          ".git/hooks/applypatch-msg.sample": {
+            "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+          },
+          ".git/hooks/commit-msg.sample": {
+            "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+          },
+          ".git/hooks/fsmonitor-watchman.sample": {
+            "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+          },
+          ".git/hooks/post-update.sample": {
+            "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+          },
+          ".git/hooks/pre-applypatch.sample": {
+            "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+          },
+          ".git/hooks/pre-commit.sample": {
+            "sha256": "f9af7d95eb1231ecf2eba9770fedfa8d4797a12b02d7240e98d568201251244a"
+          },
+          ".git/hooks/pre-merge-commit.sample": {
+            "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+          },
+          ".git/hooks/pre-push.sample": {
+            "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+          },
+          ".git/hooks/pre-rebase.sample": {
+            "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+          },
+          ".git/hooks/pre-receive.sample": {
+            "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+          },
+          ".git/hooks/prepare-commit-msg.sample": {
+            "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+          },
+          ".git/hooks/push-to-checkout.sample": {
+            "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+          },
+          ".git/hooks/update.sample": {
+            "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+          },
+          ".git/index": {
+            "sha256": "8d2dc4ccfb4fb4ab53fb0970d5624b50b098182ddc6c14b6900b15b7780e72e3"
+          },
+          ".git/info/exclude": {
+            "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+          },
+          ".git/logs/HEAD": {
+            "sha256": "2da54e90a07e5cdc468affa4d5911d3e9f736a7ba5954148d865961debc9dece"
+          },
+          ".git/logs/refs/heads/main": {
+            "sha256": "2da54e90a07e5cdc468affa4d5911d3e9f736a7ba5954148d865961debc9dece"
+          },
+          ".git/logs/refs/remotes/origin/HEAD": {
+            "sha256": "5cc73813b9ad4e19797c82d660b928cea7c54d393bf9f5d2b229917c98772671"
+          },
+          ".git/logs/refs/remotes/origin/main": {
+            "sha256": "287cc3622d8c8273f861971f5b85a9f798c197d8d9da1c48902ba12313b20ee5"
+          },
+          ".git/objects/09/044f5aed72986bf6c243a21135fb69457a9cac": {
+            "sha256": "de34b90aaae5314f80311f5c6c11122f6bbb3ab03951cd7a44d301daf0d68950"
+          },
+          ".git/objects/38/5bfb255f5c7db96ec20076eea4427b71e3affa": {
+            "sha256": "c538c128f690d2f73386fb1b28863796a1322fe76c9045ae156cff9a1c4450a9"
+          },
+          ".git/objects/3f/e0038e935a62a3d1c2c4f07405b928a1a1fd43": {
+            "sha256": "68af814272745bd494542696b4b6389f3a2e162e6734071d62cf980b9acff532"
+          },
+          ".git/objects/e8/fdb713913a44087bb5fa61134d5273499d2178": {
+            "sha256": "51cc69b08a1c6cf8ba5e603474206cb76abfa30a4ccef9450844afb85dd39e8a"
+          },
+          ".git/objects/pack/pack-a05cadc3bf2312cd5ea53dad278fa981874bfef3.idx": {
+            "sha256": "8781891ca99cfb7d30f767f5e00af70555b295172f3db7c1b88c6385ab2cb59b"
+          },
+          ".git/objects/pack/pack-a05cadc3bf2312cd5ea53dad278fa981874bfef3.pack": {
+            "sha256": "d021a8c13524e373176d03daaedde6191ae51f5ba489bc0c63b411e4b8887902"
+          },
+          ".git/packed-refs": {
+            "sha256": "791a0990b19abcba892f2206e8cf416e014b43c0b625aeb3e0fca335dad0a873"
+          },
+          ".git/refs/heads/main": {
+            "sha256": "262330d32a96b79120bb8149c7c41996fafd9785d12a94f3f81c9d0bb2af6a21"
+          },
+          ".git/refs/remotes/origin/HEAD": {
+            "sha256": "2bb6a24aa0fc6c484100f5d51a29bbad841cd2c755f5d93faa204e5dbb4eb2b4"
+          },
+          ".git/refs/remotes/origin/main": {
+            "sha256": "262330d32a96b79120bb8149c7c41996fafd9785d12a94f3f81c9d0bb2af6a21"
+          },
+          "Dockerfile": {
+            "sha256": "94629407ecc69707ebb4cbaaf315e15c146cf470e0bdf0a419c040ca0de51cfb"
+          },
+          "Jenkinsfile": {
+            "sha256": "5237527759985f7747aff2071d32da34f69cd8f554df55b5baaf9532e1852ca6"
+          },
+          "buildkey.pem": {
+            "sha256": "87999b4ed72a8f1697d02b706d3a620f3961d7e2ce872d27143eb84c3690363a"
+          },
+          "buildpublic.pem": {
+            "sha256": "4a87bcaa3f9ab6d576b878f36b5e8076bfa757cae41ad7d4fff738ae3dc3bd84"
+          },
+          "rego/cmd.rego": {
+            "sha256": "898e6d5c02ff8b04d0c8416e7e34c5b7b414256aca2b78dc6d78fcb397b8611c"
+          },
+          "rego/git.rego": {
+            "sha256": "85bdaf93ca8f2f20a9edd33ecb161a8ac28f42ea3e8e84cc245a0b3b92bbec73"
+          },
+          "requirements.txt": {
+            "sha256": "5316613637e8eac96b2b7784440583643aee0e67148e6909b2e88e0c6a0adfae"
+          },
+          "witness": {
+            "sha256": "789ba74961f2cdfc13bab81fe2ae5cca2420f3e89f346213a583dd5703899f96"
+          }
+        },
+        "starttime": "2024-10-26T00:27:45.249667+05:30",
+        "endtime": "2024-10-26T00:27:45.273045+05:30"
+      },
+      {
+        "type": "https://witness.dev/attestations/command-run/v0.1",
+        "attestation": {
+          "cmd": [
+            "bash",
+            "-c",
+            "echo 'hello' > hello.txt"
+          ],
+          "exitcode": 0
+        },
+        "starttime": "2024-10-26T00:27:45.273097+05:30",
+        "endtime": "2024-10-26T00:27:45.275919+05:30"
+      },
+      {
+        "type": "https://witness.dev/attestations/product/v0.1",
+        "attestation": {
+          "hello.txt": {
+            "mime_type": "text/plain; charset=utf-8",
+            "digest": {
+              "sha256": "5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03"
+            }
+          }
+        },
+        "starttime": "2024-10-26T00:27:45.276018+05:30",
+        "endtime": "2024-10-26T00:27:45.298254+05:30"
+      }
+    ]
+  }
+}
