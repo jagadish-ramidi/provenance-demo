@@ -37,18 +37,24 @@ stage('SCA Scan'){
 }
 
 stage('Check build Complicance'){
-    catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-        sh "./witness verify -k policypublic.pem -p policy.signed.json -a build-attestation.json -f hello.txt"
+    steps {
+        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+            sh "./witness verify -k policypublic.pem -p policy.signed.json -a build-attestation.json -f hello.txt"
+        }
     }
 }
 
 stage('modify artifact'){
-    echo "some data for the file" >> "hello.txt"
+    steps {
+        echo "some data for the file" >> "hello.txt"
+    }
 }
 
 stage('Check build Complicance post manipulation'){
-    catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-        sh "./witness verify -k policypublic.pem -p policy.signed.json -a build-attestation.json -f hello.txt"
+    steps {
+        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+            sh "./witness verify -k policypublic.pem -p policy.signed.json -a build-attestation.json -f hello.txt"
+        }
     }
 }
 
