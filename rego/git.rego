@@ -6,3 +6,8 @@ deny[msg]{
     file.worktree == "modified"
     msg := "file is modified"
 }
+
+deny[msg]{
+    not input.signature
+    msg := "Commit signature doesnt exist"
+}
